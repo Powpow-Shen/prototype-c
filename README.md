@@ -1,4 +1,7 @@
-prototype-c
-===========
+# prototype-c 
+### Sailsjs + Web Platform (HTML/CSS/JS)
 
-Sails.js + Web Platform (html/js/css)
+Note:
+* Please DO NOT fork this repo, just "cp -rf prototype-c/* dest/ && cp prototype-c/.gitignore dest/".
+* npm i
+* node app.js
