@@ -10,11 +10,10 @@ define([], function() {
    * @params {string} uri URI for the html
    */
   function htmlImports(uri) {
-    var head = document.querySelector('head'),
-      link = document.createElement('link');
-    link.setAttribute('rel', 'import');
-    link.setAttribute('href', uri);
-    head.appendChild(link);
+    var link = document.createElement('link');
+    link.rel = 'import';
+    link.href = uri;
+    document.head.appendChild(link);
   }
 
   return htmlImports;

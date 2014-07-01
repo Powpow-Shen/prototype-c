@@ -7,9 +7,10 @@ require(['config/require'], function() {
       require([
         'bootstrap',
         'css!styles/compiled/style.css',
-        'scripts/router',
-        'scripts/libs/htmlImports'
-      ], function(bootstrap, style, Router, htmlImports) {
+        'scripts/router'
+      ], function(bootstrap, style, Router) {
+        var router = new Router();
+
       });
     });
   });
