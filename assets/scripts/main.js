@@ -10,7 +10,8 @@ require(['config/require'], function() {
         'scripts/router'
       ], function(bootstrap, style, Router) {
         var router = new Router();
-
+        // set up MVC here.
+        router.sync();
       });
     });
   });
