@@ -5,7 +5,8 @@ define([], function() {
    * htmlImports utility
    *
    * Write an html imports into the head of window.document.
-   * @usage: htmlImports('uri');
+   * Usage: htmlImports('uri');
+   *
    * @params {string} uri URI for the html
    */
   function htmlImports(uri) {
