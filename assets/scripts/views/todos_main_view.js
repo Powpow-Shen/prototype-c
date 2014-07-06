@@ -10,8 +10,6 @@ define(function(require, exports, module) {
 
   function TodosMainView(placeHolder) {
     importsHTML('elements/todos-main/todos-main');
-
-    // Set up observation of the route here, if necessary.
   }
 
   TodosMainView.prototype = {

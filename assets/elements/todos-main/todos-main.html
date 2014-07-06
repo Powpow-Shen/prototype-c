@@ -13,7 +13,7 @@
           </li>
         </template>
       </ul>
-      <input id="toggle-all" class="" type="checkbox">
+      <input id="toggle-all" type="checkbox" checked='{{areAllCompleted ? "checked": ""}}' on-click="{{completeAll}}">
     </section>
   </template>
   <script src="script.js"></script>

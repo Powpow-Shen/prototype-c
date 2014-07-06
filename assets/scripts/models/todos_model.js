@@ -73,6 +73,11 @@ define(function(require, exports, module) {
         }
       }
       return index;
+    },
+    completeAll: function(yes) {
+      for (var i = 0; i < this._data.length; i++) {
+        this._data[i].isCompleted = yes;
+      }
     }
   };
 });
