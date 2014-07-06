@@ -1,6 +1,13 @@
 Polymer('todos-main', {
   ready: function() {
+    this.list = this.routeMapping(document.location.hash);
     this.todosData = todosApp.todosModel.read();
+
+    // Set up observation of the route here, if necessary.
+    var observer = new PathObserver(document.location, 'hash');
+    observer.open(function(newVal, oldVal){
+      document.querySelector('todos-main').route = newVal;
+    });
   },
   completeTodo: function(e) {
     var id = $(e.target).siblings()[2].value;
@@ -9,5 +16,23 @@ Polymer('todos-main', {
   destroyTodo: function(e) {
     var id = $(e.target).siblings()[2].value;
     todosApp.todosModel.destroy(id);
+  },
+  routeChanged: function(oldVal, newVal) {
+    console.log('route changed');
+    this.list = this.routeMapping(newVal);
+    //var list = this.routeMapping(newVal);
+  },
+  routeMapping: function(route) {
+    var list;
+    switch(route) {
+      case '#/active':
+      case '#/completed':
+        list = route.substring(2);
+        break;
+      default:
+        list = 'all';
+        break;
+    }
+    return list;
   }
 });

@@ -60,7 +60,7 @@ define(function(require, exports, module) {
      */
     destroy: function(id) {
       var index = this.lookUpIndex(id);
-      if (id) {
+      if (index !== null && index !== undefined) {
         this._data.splice(index, 1);
       }
     },

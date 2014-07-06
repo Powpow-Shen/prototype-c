@@ -5,7 +5,7 @@ define(function(require, exports, module) {
   'use strict';
 
   require('css!styles/basic-layout');
-  var Router = require('scripts/router');
+  //var Router = require('scripts/router');
   var TodosModel = require('scripts/models/todos_model');
   var TodosAppView = require('scripts/views/todos_app_view');
   var TodosHeaderView = require('scripts/views/todos_header_view');
@@ -18,7 +18,7 @@ define(function(require, exports, module) {
   module.exports = TodosApp;
 
   function TodosApp() {
-    var router = new Router();
+    //this.router = new Router();
     // set up MVC here.
     this.todosModel = new TodosModel();
     var todosAppView = new TodosAppView();
@@ -34,7 +34,7 @@ define(function(require, exports, module) {
     var todosFooterController = new TodosFooterController();
     
     // Let router sync with current URL.
-    router.sync();
+    //this.router.sync();
   }
 
 });

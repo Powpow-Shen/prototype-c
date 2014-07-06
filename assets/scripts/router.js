@@ -19,12 +19,14 @@ define(function(require, exports, module) {
    * sync method will help router to sync with current url.
    * @method sync
    */
-  Router.prototype.sync = function() {
-    this.route = document.location.hash;
-    var observer = new PathObserver(document.location, 'hash');
-    observer.open(function(newValue, oldValue) {
-      this.route = newValue;
-    });
+  Router.prototype = {
+    sync: function() {
+      this.route = document.location.hash;
+      var observer = new PathObserver(document.location, 'hash');
+      observer.open(function(newValue, oldValue) {
+        todosApp.router.route = newValue;
+      });
+    }
   };
 
 });
