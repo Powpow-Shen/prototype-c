@@ -1,0 +1,25 @@
+<link rel="import" href="../../components/polymer/polymer.html">
+<polymer-element name="todos-footer">
+  <template>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <footer id="footer">
+      <span id="todo-count">
+        <strong>2</strong> items left
+    </span>
+      <ul id="filters">
+        <li>
+          <a id="ember422" class="ember-view selected" href="#/">All</a>
+        </li>
+        <li>
+          <a id="ember423" class="ember-view" href="#/active">Active</a>
+        </li>
+        <li>
+          <a id="ember430" class="ember-view" href="#/completed">Completed</a>
+        </li>
+      </ul>
+      <button id="clear-completed" data-ember-action="10">
+        Clear completed ( 1 )
+      </button>
+    </footer>
+  </template>
+</polymer-element>

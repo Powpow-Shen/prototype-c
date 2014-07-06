@@ -1,20 +1,20 @@
 /**
- * htmlImports utility
+ * importsHTML utility
  *
  * Write an html imports into the head of window.document.
- * Usage: htmlImports('uri');
+ * Usage: importsHTML('uri');
  *
- * @params {string} uri URI for the html
+ * @params {string} uri URI for the html without '.html'
  */
 define(function(require, exports, module) {
   'use strict';
 
-  module.exports = htmlImports;
+  module.exports = importsHTML;
 
-  function htmlImports(uri) {
+  function importsHTML(uri) {
     var link = document.createElement('link');
     link.rel = 'import';
-    link.href = uri;
+    link.href = uri + '.html';
     document.head.appendChild(link);
   }
 

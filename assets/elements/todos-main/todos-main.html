@@ -1,0 +1,20 @@
+<link rel="import" href="../../components/polymer/polymer.html">
+<polymer-element name="todos-main">
+  <template>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <section id="main">
+      <ul id="todo-list">
+        <template repeat="{{todo in todosData}}">
+          <li class='{{todo.isCompleted ? "completed": ""}}'>
+            <input class="toggle" type="checkbox" checked='{{todo.isCompleted ? "checked" : ""}}' on-click="{{completeTodo}}">
+            <label>{{todo.title}}</label>
+            <button class="destroy" on-click="{{destroyTodo}}"></button>
+            <input type="text" class="hidden" value="{{todo.id}}">
+          </li>
+        </template>
+      </ul>
+      <input id="toggle-all" class="" type="checkbox">
+    </section>
+  </template>
+  <script src="script.js"></script>
+</polymer-element>
