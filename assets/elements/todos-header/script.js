@@ -1,6 +1,7 @@
 Polymer('todos-header', {
   createNewTodo: function(e){
-    if(e.keyIdentifier === 'Enter' && this.$.newTodo.value.trim() !== '') {
+    // If the user press 'Enter'(13)
+    if(e.keyCode === 13 && this.$.newTodo.value.trim() !== '') {
       var newTodoString = this.$.newTodo.value.trim();
       this.$.newTodo.value = '';
       todosApp.todosModel.create(newTodoString);

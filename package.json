@@ -2,16 +2,16 @@
   "name": "prototype-c",
   "private": true,
   "version": "0.0.0",
-  "description": "Sailsjs + Web Platform (HTML/CSS/JS)",
+  "description": "Sailsjs + Polymer",
   "dependencies": {
     "sails": "0.9.4",
     "bower": "1.3.5",
     "grunt": "0.4.1",
     "gulp": "3.8.2",
+    "gulp-traceur": "~0.7.0",
     "sails-disk": "~0.9.0",
     "ejs": "0.8.4",
-    "optimist": "0.3.4",
-    "gulp-traceur": "~0.7.0"
+    "optimist": "0.3.4"
   },
   "devDependencies": {
     "jshint": "2.4.0"
