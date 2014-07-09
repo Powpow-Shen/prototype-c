@@ -2,6 +2,6 @@
 ### Sailsjs + Polymer 
 
 Note:
-* Please DO NOT fork this repo, just "cp -rf prototype-c/* dest/ && cp prototype-c/.gitignore dest/".
+* Just "cp -rf prototype-c/* dest/ && cp prototype-c/.gitignore dest/ && cp prototype-c/.bowerrc dest/".
 * npm i
 * node app.js
