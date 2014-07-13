@@ -14,9 +14,9 @@
     "tests"
   ],
   "dependencies": {
-    "requirejs": "~2.1.14",
-    "require-css": "~0.1.4",
-    "jquery": "~2.1.1",
+    "requirejs": "#~2.1.14",
+    "require-css": "#~0.1.4",
+    "jquery": "#~2.1.1",
     "polymer": "Polymer/polymer#~0.3.3",
     "polymer-selector": "Polymer/polymer-selector#~0.3.0",
     "flatiron-director": "Polymer/flatiron-director#~0.3.0",
