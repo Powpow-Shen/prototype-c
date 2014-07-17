@@ -2,7 +2,7 @@
   "name": "prototype-c",
   "private": true,
   "version": "0.0.0",
-  "description": "Sailsjs + Polymer",
+  "description": "Sailsjs + Polymer + assetgraph",
   "dependencies": {
     "autoprefixer": "^2.1.1",
     "bower": "1.3.8",
