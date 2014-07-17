@@ -1,5 +1,5 @@
 # prototype-c 
-### Sailsjs + Polymer + assetgraph (in production mode)
+### Sailsjs + Polymer + assetgraph
 
 For easier development, assetgraph only works in production mode not in development mode.
 To take full advantage of the image processing and optimization features, you can checkout [assetgraph-builder] page.
