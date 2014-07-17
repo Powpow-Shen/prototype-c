@@ -1,12 +1,3 @@
-/* base.css overrides */
-
-:host { 
-	* { 
-		display: block;
-		position: relative;
-	}
-}
-
 button {
 	margin: 0;
 	padding: 0;
@@ -17,7 +8,7 @@ button {
 	font-family: inherit;
 	color: inherit;
 	-webkit-appearance: none;
-	/*-moz-appearance: none;*/
+	-moz-appearance: none;
 	-ms-appearance: none;
 	-o-appearance: none;
 	appearance: none;
@@ -260,8 +251,12 @@ label[for='toggle-all'] {
 		width: 65px;
 		height: 41px;
 		-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 		transform: rotate(90deg);
 		-webkit-appearance: none;
+    -moz-appearance: none;
 		appearance: none;
 	}
 }
